@@ -1,7 +1,7 @@
 from pyAudioAnalysis import audioBasicIO
 from pyAudioAnalysis import ShortTermFeatures
 import matplotlib.pyplot as plt
-[Fs, x] = audioBasicIO.read_audio_file("./samples/track1_mono.wav")
+[Fs, x] = audioBasicIO.read_audio_file("./samples/like_themes/track1_mono.wav")
 
 print('Fs: \n', Fs)
 print('\n\n\nx: ', len(x))
@@ -13,4 +13,5 @@ print('F: \n', F)
 print('\n\n\nf_names: ', f_names)
 
 plt.subplot(2,1,1); plt.plot(F[0,:]); plt.xlabel('Frame no'); plt.ylabel(f_names[0]) 
-plt.subplot(2,1,2); plt.plot(F[1,:]); plt.xlabel('Frame no'); plt.ylabel(f_names[1]); plt.show()
+plt.subplot(2,1,2); plt.plot(F[1,:]); plt.xlabel('Frame no'); plt.ylabel(f_names[1])
+plt.show();

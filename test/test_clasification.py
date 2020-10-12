@@ -3,4 +3,4 @@ aT.extract_features_and_train(["./samples/like_themes/", "./samples/unlike_theme
 
 print('\n\n Clasiffie archivo')
 
-aT.file_classification("./samples/test_themes/test_1.wav", "./liked", "knn")
+aT.file_classification("./samples/test_themes/test_1_like.wav", "./liked", "knn")
